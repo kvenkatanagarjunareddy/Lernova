@@ -1,0 +1,8 @@
+$kind: http-request
+name: Search Courses
+method: GET
+url: '{{base_url}}/api/courses/search'
+order: 3000
+queryParams:
+  - key: name
+    value: '{{searchName}}'

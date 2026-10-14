@@ -1,0 +1,18 @@
+$kind: http-request
+name: Update Course
+method: PUT
+url: '{{base_url}}/api/courses/{{courseId}}'
+order: 6000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Spring Boot Basics",
+      "description": "Learn Spring Boot from scratch",
+      "instructor": "John Doe",
+      "duration": 30,
+      "status": "active"
+    }

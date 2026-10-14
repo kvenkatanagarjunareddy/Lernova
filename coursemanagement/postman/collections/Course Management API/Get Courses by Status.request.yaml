@@ -1,0 +1,5 @@
+$kind: http-request
+name: Get Courses by Status
+method: GET
+url: '{{base_url}}/api/courses/status/{{status}}'
+order: 4000

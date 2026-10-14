@@ -1,0 +1,13 @@
+$kind: http-request
+method: POST
+url: http://localhost:8090/api/auth/login
+order: 5000
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "email": "admin@courseapp.local",
+      "password": "{{ADMIN_PASSWORD}}"
+    }
